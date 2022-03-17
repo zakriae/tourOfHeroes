@@ -1,0 +1,14 @@
+
+<div class="for-space"></div>
+<div *ngIf="messageService.messages.length">
+  <div class="messages">
+    <h4>Messages</h4>
+    <div class="messages-content">
+        <button type="button" class="clear"
+            (click)="messageService.clear()">Clear messages</button>
+    <div class="hero-ele message" *ngFor='let message of messageService.messages'> {{message}} </div>
+    </div>
+   
+  </div>
+</div>
+<div class="for-space"></div>

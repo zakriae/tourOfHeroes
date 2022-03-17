@@ -1,1 +1,135 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+
+ 
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    --primary-color:  rgb(0, 110, 255);
+    --secondary-color: rgb(253, 253, 253);
+    --border-color: rgb(223, 220, 220);
+}
+
+h4 {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: 3px 3px 0 0;
+}
+
+#name {
+
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    border:   0.2px solid var(--border-color);
+    background-color: var(--secondary-color);
+
+
+}
+.hero , .heroes-list , .messages {
+
+   background-color: var(--secondary-color);
+   margin: auto;
+   max-width: 60%;
+   border-radius: 4px;
+   border:   0.2px solid var(--border-color);
+   box-shadow: -1px 2px 8px -5px rgba(0,0,0,0.26);
+   -webkit-box-shadow: -1px 2px 8px -5px rgba(0,0,0,0.26);
+   -moz-box-shadow:  -1px 2px 8px -5px rgba(0,0,0,0.26);
+
+
+}
+
+label{
+
+    display: block;
+}
+
+.for-space {
+    height: 30px;
+}
+
+.hero-inf {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-form{
+    margin-left: 10px;
+}
+
+.heroes  {
+ margin: auto;
+ width: 60%;
+
+   
+}
+
+.hero-ele{
+
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    border:   0.2px solid var(--border-color);
+    margin: 10px;
+    min-height: 60px;
+    display: flex;
+    justify-content: start;
+   
+}
+
+.badge {
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    min-width: 7%;
+    border-radius: 4px;
+    border-radius: 3px 0 0 3px ;
+    padding: 20px 10px;
+
+
+}
+
+button {
+    padding: 20px 10px;
+    width: 100%;
+    border: none;
+}
+.messages-content button{
+
+    width: 30%;
+    padding-left: 10;
+}
+.message  {
+    padding: 20px 0px;
+    margin-left: 0;
+}
+
+
+button:hover {
+
+    background-color:  var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.messages-content {
+    padding: 20px;
+
+}
+@media (max-width: 500px)
+{
+
+    .hero-inf {
+        flex-direction: column;
+     
+    }
+    .hero-details {
+        margin-left: 10px;
+    }
+}
