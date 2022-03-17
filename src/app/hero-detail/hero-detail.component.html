@@ -1,0 +1,14 @@
+
+  <div class="hero" *ngIf="myHero">
+    <h4>{{myHero.name | uppercase}} Details</h4>
+    <div class="hero-inf">
+        <div class="hero-form">
+            <label for="name">hero name:</label>
+            <input id="name" type="text" [(ngModel)]="myHero.name" >
+        </div>
+        <div class="hero-details">
+            <div>id: {{myHero.id}}</div>
+            <div>name: {{myHero.name}}</div>
+        </div>
+  </div>
+  </div>

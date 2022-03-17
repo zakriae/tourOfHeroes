@@ -1,20 +1,8 @@
 <div class="container">
 
-  <div class="hero">
-    <h4>{{hero.name | uppercase}} Details</h4>
-    <div class="hero-inf">
-        <div class="hero-form">
-            <label for="name">hero name:</label>
-            <input id="name" type="text" [(ngModel)]="hero.name" >
-        </div>
-        <div class="hero-details">
-            <div>id: {{hero.id}}</div>
-            <div>name: {{hero.name}}</div>
-        </div>
-  </div>
-  </div>
    
-  <div class="for-space"></div>
+
+ 
 
     <div class="heroes-list">
 
@@ -22,13 +10,16 @@
      <div  class="heroes">
         <ul>
           <li   class="hero-ele" *ngFor="let hero of heroes">
-            <span class="badge">{{hero.id}}</span><div class="hero-name"> {{hero.name}}</div> 
+            <span class="badge">{{hero.id}}</span> 
+            <button  (click)="onClick(hero)" >{{hero.name}}</button>
+           
           </li>
         </ul>
     </div>
     
     </div>
-    
+    <div class="for-space"></div>
+    <hero-detail [myHero]="hero"></hero-detail>
    
 
 </div>
