@@ -7,8 +7,9 @@
         <ul>
           <li   class="hero-ele" *ngFor="let hero of heroes">
             <span class="badge">{{hero.id}}</span> 
-            <button  (click)="onClick(hero)" >{{hero.name}}</button>
-           
+            <a routerLink="/detail/{{hero.id}}">
+           {{hero.name}}
+             </a>
           </li>
         </ul>
     </div>
@@ -16,7 +17,7 @@
     </div>
     <div class="for-space"></div>
     
-    <hero-detail [myHero]="hero"></hero-detail>
+    
    
 
 </div>

@@ -10,8 +10,11 @@
     --primary-color:  rgb(0, 110, 255);
     --secondary-color: rgb(253, 253, 253);
     --border-color: rgb(223, 220, 220);
+    text-decoration: none;
 }
-
+h1 {
+    text-align: center;
+}
 h4 {
     padding: 10px;
     margin-bottom: 10px;
@@ -33,7 +36,7 @@ h4 {
 
 
 }
-.hero , .heroes-list , .messages {
+.hero , .heroes-list , .messages, .dashboard {
 
    background-color: var(--secondary-color);
    margin: auto;
@@ -96,10 +99,16 @@ label{
 
 }
 
-button {
+a   , button {
     padding: 20px 10px;
     width: 100%;
     border: none;
+    
+}
+
+nav a {
+    color: white;
+    
 }
 .messages-content button{
 
@@ -112,7 +121,7 @@ button {
 }
 
 
-button:hover {
+a:hover {
 
     background-color:  var(--primary-color);
     color: var(--secondary-color);
@@ -133,3 +142,27 @@ button:hover {
         margin-left: 10px;
     }
 }
+
+
+
+nav {
+    background-color: var(--primary-color);
+   
+    
+    padding: 10px 0 10px 0;
+    margin-bottom: 60px;
+    color: white;
+    box-shadow: -1px 2px 8px -5px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 2px 8px -5px rgba(0,0,0,0.56);
+    -moz-box-shadow:  -1px 2px 8px -5px rgba(0,0,0,0.56);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+}
+
+
+

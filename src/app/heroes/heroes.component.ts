@@ -3,6 +3,7 @@ import Hero  from '../hero';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 import { HEROES } from '../mock-heroes';
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -26,13 +27,13 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onClick(hero: Hero) : void {
+  // onClick(hero: Hero) : void {
 
-    this.hero=hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`)
-  }
+  //   this.hero=hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`)
+  // }
 
-  getHeroes()
+  getHeroes(): void
   {  
      this.heroService.
      getHeroesService().
