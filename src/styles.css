@@ -23,7 +23,7 @@ h4 {
     border-radius: 3px 3px 0 0;
 }
 
-#name {
+input {
 
     width: 200px;
     height: 40px;
@@ -36,7 +36,8 @@ h4 {
 
 
 }
-.hero , .heroes-list , .messages, .dashboard {
+
+.hero , .heroes-list , .messages, .dashboard, .search-component, .add-hero {
 
    background-color: var(--secondary-color);
    margin: auto;
@@ -121,7 +122,7 @@ nav a {
 }
 
 
-a:hover {
+a:hover, button:hover {
 
     background-color:  var(--primary-color);
     color: var(--secondary-color);
@@ -166,3 +167,12 @@ nav .container {
 
 
 
+.new-hero, .hero-search {
+
+    padding: 5px 20px 5px 20px;
+}
+
+.heroes button {
+
+    max-width: 70px;
+}
